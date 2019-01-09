@@ -21,11 +21,10 @@ class ChatRoom: NSObject {
     func emittedEvents() {
         socket.on(clientEvent: .connect) {data, ack in
             print("socket connected")
+            self.socket.emit("chat message", "Hello World")
         }
         
-        socket.on("chat message") { (data, ack) in
-            socket.emit("chat message", "hello world")
-        }
+       
         
         socket.on(clientEvent: .disconnect) { (data, ack) in
             print("This is the disconnect data \(data)")
