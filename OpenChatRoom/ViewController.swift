@@ -10,11 +10,20 @@ import UIKit
 import SocketIO
 
 class ViewController: UIViewController {
+    let chatRoom = ChatRoom()
 
+    @IBAction func sendMessageButton(_ sender: Any) {
+        chatRoom.sendMessage()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let chatRoom = ChatRoom()
+        chatRoom.sendMessage()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         chatRoom.emittedEvents()
     }
 
