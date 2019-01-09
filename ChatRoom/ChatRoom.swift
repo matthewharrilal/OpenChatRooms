@@ -31,6 +31,10 @@ class ChatRoom: NSObject {
         socket.on(clientEvent: .disconnect) { (data, ack) in
             print("This is the disconnect data \(data)")
         }
+        
+        socket.on("chat message") { (data, ack) in
+            print("CHAT DATA \(data)")
+        }
     }
     
     func sendMessage() { // Has to conect first so triggering message isn't the first thing that occurs
@@ -38,12 +42,12 @@ class ChatRoom: NSObject {
     }
     
     func joinRoom(roomName: String) {
-        self.socket.emit("join", roomName) // Join pre-exisiting chat room with given name being sent to serevr 
+        self.socket.emit("joinRoom", roomName) // Join pre-exisiting chat room with given name being sent to server
         
     }
     
     func createRoom(roomName: String) {
-        self.socket.emit("create", roomName) // Create room and send to the server the given name
+        self.socket.emit("createRoom", roomName) // Create room and send to the server the given name
     }
     
 }

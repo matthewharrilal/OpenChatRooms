@@ -12,9 +12,17 @@ import SocketIO
 class ViewController: UIViewController {
     let chatRoom = ChatRoom()
 
+    @IBOutlet weak var roomNameTextField: UITextField!
+    
     @IBAction func sendMessageButton(_ sender: Any) {
         chatRoom.sendMessage()
     }
+    
+    @IBAction func createRoomButton(_ sender: Any) {
+        print("ROOM NAME TEXT \(String(describing: self.roomNameTextField.text))")
+        chatRoom.createRoom(roomName: self.roomNameTextField.text ?? "NONE")
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
