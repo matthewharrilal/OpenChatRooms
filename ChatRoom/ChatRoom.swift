@@ -23,6 +23,13 @@ class ChatRoom: NSObject {
             print("socket connected")
         }
         
+        socket.on("chat message") { (data, ack) in
+            socket.emit("chat message", "hello world")
+        }
+        
+        socket.on(clientEvent: .disconnect) { (data, ack) in
+            print("This is the disconnect data \(data)")
+        }
     }
     
     
