@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C80CE8721E7C4FE0001FFE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1CAF159121E58FFF00A34AAD /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		1CC0F0C121E520DE00C21171 /* OpenChatRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenChatRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC0F0C421E520DE00C21171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		1CC0F0B821E520DE00C21171 = {
 			isa = PBXGroup;
 			children = (
+				1C80CE8721E7C4FE0001FFE3 /* README.md */,
 				1CAF159021E58FEF00A34AAD /* ChatRoom */,
 				1CC0F0C321E520DE00C21171 /* OpenChatRoom */,
 				1CC0F0C221E520DE00C21171 /* Products */,
