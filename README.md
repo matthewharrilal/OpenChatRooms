@@ -12,7 +12,7 @@
 ####  The purpose of creating Open Chat Room was to go deeper in my understanding of Socket.IO. In particular going deep understanding difference in communication between server and clients. Initally going deeper down and working with the TCP layer directly in my application I found that to be a greater challenge to surmount. However, still an interesting challenge to surmount to say the least!
 
 
-## ** Features That Need To Be Added **
+## **Features That Need To Be Added**
 
 #### Future iterations of this application include the ability to
 
