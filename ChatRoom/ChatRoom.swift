@@ -12,12 +12,12 @@ import SocketIO
 class ChatRoom: NSObject {
     
     static let manager = SocketManager(socketURL: URL(string: "http://localhost:4000/")!, config: [.log(true), .compress])
-    private var socket = manager.defaultSocket
+    private var socket = manager.defaultSocket // Singleton instance  one socket connection per phone
     
-    static var roomName = ""
+//    static var roomName = ""
     
     override init() {
-        socket.connect()
+        socket.connect() // When you instantiate the chat room the socket connects to the server
     }
     
     
