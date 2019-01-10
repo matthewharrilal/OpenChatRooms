@@ -43,11 +43,14 @@ class ChatRoom: NSObject {
     
     func joinRoom(roomName: String) {
         self.socket.emit("joinRoom", roomName) // Join pre-exisiting chat room with given name being sent to server
-        
     }
     
     func createRoom(roomName: String) {
         self.socket.emit("createRoom", roomName) // Create room and send to the server the given name
+    }
+    
+    func leaveRoom(roomName:String) {
+        self.socket.emit("leaveRoom", roomName) // Leave the specified room that the user is in
     }
     
 }

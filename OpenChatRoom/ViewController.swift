@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         chatRoom.createRoom(roomName: self.roomNameTextField.text ?? "NONE")
     }
     
+    @IBAction func leaveRoomButton(_ sender: Any) {
+        print("USER HAS LEFT THE ROOM \(String(describing: roomNameTextField.text))")
+        chatRoom.leaveRoom(roomName: roomNameTextField.text ?? "NONE")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
