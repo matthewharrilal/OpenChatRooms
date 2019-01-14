@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14E504FCF81A6B4E15CCD7D6 /* Pods_OpenChatRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3069C65417E031F3A76F5586 /* Pods_OpenChatRoom.framework */; };
+		1C0AAFE621ECFBDA00E00A77 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AAFE521ECFBDA00E00A77 /* MessageTableViewCell.swift */; };
+		1C0AAFE921ECFD0B00E00A77 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0AAFE821ECFD0B00E00A77 /* Message.swift */; };
 		1CAF159221E58FFF00A34AAD /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF159121E58FFF00A34AAD /* ChatRoom.swift */; };
 		1CC0F0C521E520DE00C21171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0F0C421E520DE00C21171 /* AppDelegate.swift */; };
 		1CC0F0C721E520DE00C21171 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0F0C621E520DE00C21171 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C0AAFE521ECFBDA00E00A77 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		1C0AAFE821ECFD0B00E00A77 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1C80CE8721E7C4FE0001FFE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1CAF159121E58FFF00A34AAD /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		1CC0F0C121E520DE00C21171 /* OpenChatRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenChatRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0AAFE721ECFD0300E00A77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C0AAFE821ECFD0B00E00A77 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1CAF159021E58FEF00A34AAD /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +66,7 @@
 		1CC0F0B821E520DE00C21171 = {
 			isa = PBXGroup;
 			children = (
+				1C0AAFE721ECFD0300E00A77 /* Models */,
 				1C80CE8721E7C4FE0001FFE3 /* README.md */,
 				1CAF159021E58FEF00A34AAD /* ChatRoom */,
 				1CC0F0C321E520DE00C21171 /* OpenChatRoom */,
@@ -80,6 +93,7 @@
 				1CC0F0CB21E520DE00C21171 /* Assets.xcassets */,
 				1CC0F0CD21E520DE00C21171 /* LaunchScreen.storyboard */,
 				1CC0F0D021E520DE00C21171 /* Info.plist */,
+				1C0AAFE521ECFBDA00E00A77 /* MessageTableViewCell.swift */,
 			);
 			path = OpenChatRoom;
 			sourceTree = "<group>";
@@ -233,6 +247,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CC0F0C721E520DE00C21171 /* ViewController.swift in Sources */,
+				1C0AAFE621ECFBDA00E00A77 /* MessageTableViewCell.swift in Sources */,
+				1C0AAFE921ECFD0B00E00A77 /* Message.swift in Sources */,
 				1CC0F0C521E520DE00C21171 /* AppDelegate.swift in Sources */,
 				1CAF159221E58FFF00A34AAD /* ChatRoom.swift in Sources */,
 			);

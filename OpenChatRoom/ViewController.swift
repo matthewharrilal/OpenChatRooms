@@ -11,6 +11,7 @@ import SocketIO
 
 class ViewController: UIViewController {
     let chatRoom = ChatRoom()
+    
 
     @IBOutlet weak var roomNameTextField: UITextField!
     
